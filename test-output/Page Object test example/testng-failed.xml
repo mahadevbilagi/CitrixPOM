@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]">
+  <parameter name="appURL" value="https://www.google.co.in/"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="Citrix.TestScripts.BasePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- Citrix.TestScripts.BasePageTest -->
+      <class name="Citrix.TestScripts.SignInPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifySignInFunction"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- Citrix.TestScripts.SignInPageTest -->
+      <class name="Citrix.TestScripts.CreateAnAccounTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Citrix.TestScripts.CreateAnAccounTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->
