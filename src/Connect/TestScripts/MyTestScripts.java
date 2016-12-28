@@ -26,7 +26,7 @@ public class MyTestScripts extends FFConnectBaseSetup {
 		
 	}
 	
-	/*@Test 
+	@Test 
 	public void LoginwithInValidCredentialsPasswordandEmail()
 	{		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
@@ -50,5 +50,5 @@ public class MyTestScripts extends FFConnectBaseSetup {
 		loginPage.CheckLoginWithInValidCred("mahadev@gmail.com", "123456ABC");	
 		Log.info("LoginwithInValidCredentialsPassword Test case completed");
 	}	
-	*/
+	
 }
