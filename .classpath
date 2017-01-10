@@ -8,7 +8,6 @@
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/hamcrest-core-1.3(1).jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/hamcrest-core-1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/junit-4.12(1).jar"/>
-	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/junit-4.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/junit-4.12-beta-3.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/jxl-2.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/All JAR files for selenium/log4j-1.2.17.jar"/>
@@ -53,5 +52,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="D:/WORK/CitrixPOM/lib/selenium-server-standalone-2.42.0(1).jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/WORK/CitrixPOM/lib/testng-6.0.jar"/>
+	<classpathentry kind="lib" path="D:/All JAR files for selenium/junit-4.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

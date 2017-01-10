@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import Connect.General.ConnectBaseSetup;
 
-public class Writing extends ConnectBaseSetup {	
+public class WritingAssignment extends ConnectBaseSetup {	
 	
 	@FindBy(xpath = "//a[contains(text(),'Add assignment')]")
 	WebElement AddAssignment;

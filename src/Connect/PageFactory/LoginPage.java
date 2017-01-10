@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Connect.General.FFConnectBaseSetup;
+import Connect.General.ConnectBaseSetup;
 
-public class LoginPage extends FFConnectBaseSetup {	
+public class LoginPage extends ConnectBaseSetup {	
 	
 	@FindBy(id = "userName")
 	WebElement UserName;

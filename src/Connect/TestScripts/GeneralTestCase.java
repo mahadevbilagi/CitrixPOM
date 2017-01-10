@@ -1,10 +1,15 @@
 package Connect.TestScripts;
 
+import java.util.concurrent.TimeUnit;
+
+import org.eclipse.jetty.util.log.Log;
+import org.testng.annotations.Test;
+
 import Connect.General.ConnectBaseSetup;
 
-public class MyTestScripts extends ConnectBaseSetup {		
+public class GeneralTestCase extends ConnectBaseSetup {		
 	
-	/*		@Test 
+			@Test 
 			public void LoginwithValidCredentials()
 			{			
 				loginPage.CheckLoginWithValidCred("mahadev@gmail.com", "123456");
@@ -14,9 +19,14 @@ public class MyTestScripts extends ConnectBaseSetup {
 				waitforApge();				
 				Log.info("Login with Valid Credentials Test case completed");
 				
+			}
+
+			private void waitforApge() {
+				// TODO Auto-generated method stub
+				
 			}	
 			
-			@Test 
+	/*		@Test 
 			public void LoginwithInValidCredentialsPasswordandEmail()
 			{					
 				loginPage.CheckLoginWithInValidCred("mahadev1234@gmail.com", "12345ad6");	
