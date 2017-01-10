@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import Connect.General.ConnectBaseSetup;
 
-public class BlogScript extends ConnectBaseSetup {			
+public class BlogTestScript extends ConnectBaseSetup {			
 
 	@SuppressWarnings("static-access")
 	@Test 
@@ -18,7 +18,7 @@ public class BlogScript extends ConnectBaseSetup {
 		Thread.sleep(5000);					
 		Log.info("Successfully Navigated to section");		
 		
-		blog.CreateBlogAssignment();		
+		BlogCreate.CreateBlog();		
 		Log.info("BlogAssignment created successfully! ");
 		
 		waitforApge();			

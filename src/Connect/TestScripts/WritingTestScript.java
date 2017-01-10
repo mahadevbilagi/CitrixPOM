@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import Connect.General.ConnectBaseSetup;
 
-public class WritingScript extends ConnectBaseSetup {			
+public class WritingTestScript extends ConnectBaseSetup {			
 
 	@SuppressWarnings("static-access")
 	@Test 
@@ -19,7 +19,7 @@ public class WritingScript extends ConnectBaseSetup {
 		Log.info("Successfully Navigated to section");		
 		
 		String type = "composeonline";		
-		writing.CreateWritingAssignment(type);	
+		WriteCreate.CreateWritingAssignment(type);	
 		
 		waitforApge();			
 		logoutPage.ClickonLogoutButton();		
@@ -41,7 +41,7 @@ public class WritingScript extends ConnectBaseSetup {
 		Log.info("Successfully Navigated to section");		
 		
 		String type = "attachdocument";	
-		writing.CreateWritingAssignment(type);	
+		WriteCreate.CreateWritingAssignment(type);	
 		
 		waitforApge();			
 		logoutPage.ClickonLogoutButton();		
@@ -63,7 +63,7 @@ public class WritingScript extends ConnectBaseSetup {
 		Log.info("Successfully Navigated to section");		
 		
 		String type = "both";	
-		writing.CreateWritingAssignment(type);		
+		WriteCreate.CreateWritingAssignment(type);		
 		
 		waitforApge();			
 		logoutPage.ClickonLogoutButton();		

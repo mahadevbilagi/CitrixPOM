@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import Connect.General.ConnectBaseSetup;
 
-public class Writing extends ConnectBaseSetup {	
+public class WritingAssignment extends ConnectBaseSetup {	
 	
 	@FindBy(xpath = "//a[contains(text(),'Add assignment')]")
 	WebElement AddAssignment;
@@ -54,7 +54,7 @@ public class Writing extends ConnectBaseSetup {
 	WebElement AssignButton;
 	
 	@SuppressWarnings("static-access")
-	public Writing(WebDriver driver){
+	public WritingAssignment(WebDriver driver){
 		this.driver = driver;		
 	}
 	

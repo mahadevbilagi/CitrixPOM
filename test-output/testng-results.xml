@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18774" started-at="2016-12-28T12:37:39Z" finished-at="2016-12-28T12:37:58Z">
+  <suite name="Default suite" duration-ms="197870" started-at="2017-01-10T13:08:48Z" finished-at="2017-01-10T13:12:06Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18774" started-at="2016-12-28T12:37:39Z" finished-at="2016-12-28T12:37:58Z">
-      <class name="Connect.TestScripts.MyTestScripts">
-        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.MyTestScripts@266bdc57]" name="LaunchBrowserwithURL" is-config="true" duration-ms="10900" started-at="2016-12-28T18:07:39Z" finished-at="2016-12-28T18:07:50Z">
+    <test name="Default test" duration-ms="197870" started-at="2017-01-10T13:08:48Z" finished-at="2017-01-10T13:12:06Z">
+      <class name="Connect.TestScripts.WritingTestScript">
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="10166" started-at="2017-01-10T18:38:48Z" finished-at="2017-01-10T18:38:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowserwithURL -->
-        <test-method status="PASS" signature="LoginwithValidCredentials()[pri:0, instance:Connect.TestScripts.MyTestScripts@266bdc57]" name="LoginwithValidCredentials" duration-ms="7608" started-at="2016-12-28T18:07:50Z" finished-at="2016-12-28T18:07:57Z">
+        <test-method status="PASS" signature="Writing_AttachDocument()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_AttachDocument" duration-ms="54009" started-at="2017-01-10T18:38:58Z" finished-at="2017-01-10T18:39:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginwithValidCredentials -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.MyTestScripts@266bdc57]" name="CloseBrowser" is-config="true" duration-ms="240" started-at="2016-12-28T18:07:57Z" finished-at="2016-12-28T18:07:58Z">
+        </test-method> <!-- Writing_AttachDocument -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2348" started-at="2017-01-10T18:39:52Z" finished-at="2017-01-10T18:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Connect.TestScripts.MyTestScripts -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="8191" started-at="2017-01-10T18:39:54Z" finished-at="2017-01-10T18:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowserwithURL -->
+        <test-method status="PASS" signature="Writing_Both()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_Both" duration-ms="49836" started-at="2017-01-10T18:40:03Z" finished-at="2017-01-10T18:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writing_Both -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2327" started-at="2017-01-10T18:40:52Z" finished-at="2017-01-10T18:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="8761" started-at="2017-01-10T18:40:55Z" finished-at="2017-01-10T18:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowserwithURL -->
+        <test-method status="PASS" signature="Writing_ComposeOnline()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_ComposeOnline" duration-ms="59903" started-at="2017-01-10T18:41:04Z" finished-at="2017-01-10T18:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writing_ComposeOnline -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2315" started-at="2017-01-10T18:42:03Z" finished-at="2017-01-10T18:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Connect.TestScripts.WritingTestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

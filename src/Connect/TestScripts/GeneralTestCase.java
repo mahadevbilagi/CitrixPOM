@@ -1,22 +1,27 @@
 package Connect.TestScripts;
 
-import Connect.General.ConnectBaseSetup;
+import java.util.concurrent.TimeUnit;
 
-public class MyTestScripts extends ConnectBaseSetup {		
+import org.testng.annotations.Test;
+
+import Connect.General.ConnectBaseSetup;
+import Connect.PageFactory.Selectsection;
+
+public class GeneralTestCase extends ConnectBaseSetup {		
 	
-	/*		@Test 
+			@Test 
 			public void LoginwithValidCredentials()
 			{			
-				loginPage.CheckLoginWithValidCred("mahadev@gmail.com", "123456");
+				loginPage.CheckLoginWithValidCred("mahadev@gmail.com", "123456");				
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				waitforApge();			
 				logoutPage.ClickonLogoutButton();			
 				waitforApge();				
 				Log.info("Login with Valid Credentials Test case completed");
 				
-			}	
+			}			
 			
-			@Test 
+	/*		@Test 
 			public void LoginwithInValidCredentialsPasswordandEmail()
 			{					
 				loginPage.CheckLoginWithInValidCred("mahadev1234@gmail.com", "12345ad6");	
@@ -37,16 +42,8 @@ public class MyTestScripts extends ConnectBaseSetup {
 			
 				loginPage.CheckLoginWithInValidCred("mahadev@gmail.com", "123456ABC");	
 				Log.info("LoginwithInValidCredentialsPassword Test case completed");
-			}		
-			
-			@Test 
-			public void CheckHelpLink()
-			{	
+			}					
 					
-				loginPage.CheckHelpLink();			
-				waitforApge();		
-			}
-			
 			@Test 
 			public void navigatetosection() throws InterruptedException
 			{			
@@ -61,6 +58,6 @@ public class MyTestScripts extends ConnectBaseSetup {
 				waitforApge();			
 				logoutPage.ClickonLogoutButton();			
 				waitforApge();			
-			}		*/
+			}*/		
 			
 }

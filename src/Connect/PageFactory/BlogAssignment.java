@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import Connect.General.ConnectBaseSetup;
 
-public class Blog extends ConnectBaseSetup {
+public class BlogAssignment extends ConnectBaseSetup {
 		
 	@FindBy(xpath = "//a[contains(text(),'Add assignment')]")
 	WebElement AddAssignment;
@@ -48,7 +48,7 @@ public class Blog extends ConnectBaseSetup {
 	WebElement AssignButton;
 	
 	@SuppressWarnings("static-access")
-	public Blog(WebDriver driver){
+	public BlogAssignment(WebDriver driver){
 		this.driver = driver;
 	}
 	
@@ -67,7 +67,7 @@ public class Blog extends ConnectBaseSetup {
 		System.out.println("Blog assignment Found in the Current Section!");
 	}	
 	
-	public void CreateBlogAssignment() throws InterruptedException{	
+	public void CreateBlog() throws InterruptedException{	
 		
 		AddAssignment.isEnabled();	
 		AddAssignment.click();
