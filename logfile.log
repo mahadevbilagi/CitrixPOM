@@ -115,3 +115,98 @@
 2016-12-28 18:07:57,835 INFO  [Log] LogoutButton found 
 2016-12-28 18:07:57,906 INFO  [Log] LoginwithValidCredentials Test case completed 
 2016-12-28 18:07:58,156 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:12:21,911 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:21:49,932 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:21:50,090 INFO  [Log] UserName field found 
+2017-01-10 18:21:50,163 INFO  [Log] Password field found 
+2017-01-10 18:21:58,204 INFO  [Log] SignInButton found 
+2017-01-10 18:22:00,642 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:23:08,014 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:23:08,218 INFO  [Log] UserName field found 
+2017-01-10 18:23:08,298 INFO  [Log] Password field found 
+2017-01-10 18:23:08,377 INFO  [Log] SignInButton found 
+2017-01-10 18:23:08,380 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:23:25,393 INFO  [Log] Successfully Navigated to section 
+2017-01-10 18:23:57,801 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:31:54,009 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:31:54,139 INFO  [Log] UserName field found 
+2017-01-10 18:31:54,209 INFO  [Log] Password field found 
+2017-01-10 18:31:54,288 INFO  [Log] SignInButton found 
+2017-01-10 18:31:54,291 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:32:06,265 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:33:08,273 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:33:08,387 INFO  [Log] UserName field found 
+2017-01-10 18:33:08,467 INFO  [Log] Password field found 
+2017-01-10 18:33:16,646 INFO  [Log] SignInButton found 
+2017-01-10 18:33:16,649 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:33:29,158 INFO  [Log] Successfully Navigated to section 
+2017-01-10 18:33:29,518 INFO  [Log] Click on Add assignment 
+2017-01-10 18:33:29,733 INFO  [Log] Click on Blog assignment 
+2017-01-10 18:33:38,519 INFO  [Log] Entering the Blog assignment description 
+2017-01-10 18:33:38,669 INFO  [Log] Entering the value of score 
+2017-01-10 18:33:38,908 INFO  [Log] Entering the due date 
+2017-01-10 18:33:41,430 INFO  [Log] Entering the assignment title name 
+2017-01-10 18:33:49,944 INFO  [Log] Click on Review & assign button 
+2017-01-10 18:33:57,459 INFO  [Log] Click on Assign button 
+2017-01-10 18:33:57,459 INFO  [Log] BlogAssignment created successfully!  
+2017-01-10 18:33:57,546 INFO  [Log] LogoutButton found 
+2017-01-10 18:33:57,702 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:38:58,540 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:38:58,658 INFO  [Log] UserName field found 
+2017-01-10 18:38:58,737 INFO  [Log] Password field found 
+2017-01-10 18:39:04,315 INFO  [Log] SignInButton found 
+2017-01-10 18:39:04,318 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:39:21,588 INFO  [Log] Successfully Navigated to section 
+2017-01-10 18:39:21,934 INFO  [Log] Click on Add assignment 
+2017-01-10 18:39:27,150 INFO  [Log] Click on Writing assignment 
+2017-01-10 18:39:33,580 INFO  [Log] Entering the writing assignment description 
+2017-01-10 18:39:33,749 INFO  [Log] Entering the value of score 
+2017-01-10 18:39:33,825 INFO  [Log] Click on Available now 
+2017-01-10 18:39:33,895 INFO  [Log] Click on AttachFile online 
+2017-01-10 18:39:34,447 INFO  [Log] Entering the assignment title name 
+2017-01-10 18:39:38,117 INFO  [Log] Entering the due date 
+2017-01-10 18:39:44,212 INFO  [Log] Click on Review & assign button 
+2017-01-10 18:39:51,466 INFO  [Log] Click on Assign button 
+2017-01-10 18:39:51,466 INFO  [Log] Writing assignment with created type :attachdocument 
+2017-01-10 18:39:52,574 INFO  [Log] LogoutButton found 
+2017-01-10 18:39:54,929 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:40:03,116 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:40:03,211 INFO  [Log] UserName field found 
+2017-01-10 18:40:03,298 INFO  [Log] Password field found 
+2017-01-10 18:40:03,379 INFO  [Log] SignInButton found 
+2017-01-10 18:40:03,385 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:40:27,655 INFO  [Log] Successfully Navigated to section 
+2017-01-10 18:40:27,991 INFO  [Log] Click on Add assignment 
+2017-01-10 18:40:30,270 INFO  [Log] Click on Writing assignment 
+2017-01-10 18:40:35,368 INFO  [Log] Entering the writing assignment description 
+2017-01-10 18:40:35,526 INFO  [Log] Entering the value of score 
+2017-01-10 18:40:35,603 INFO  [Log] Click on Available now 
+2017-01-10 18:40:35,673 INFO  [Log] Click on both online 
+2017-01-10 18:40:35,776 INFO  [Log] Click on Simple text palette 
+2017-01-10 18:40:36,287 INFO  [Log] Entering the assignment title name 
+2017-01-10 18:40:39,941 INFO  [Log] Entering the due date 
+2017-01-10 18:40:44,764 INFO  [Log] Click on Review & assign button 
+2017-01-10 18:40:52,142 INFO  [Log] Click on Assign button 
+2017-01-10 18:40:52,142 INFO  [Log] Writing assignment with created type :both 
+2017-01-10 18:40:52,948 INFO  [Log] LogoutButton found 
+2017-01-10 18:40:55,284 INFO  [Log] Closing the Firefox! 
+2017-01-10 18:41:04,040 INFO  [Log] Welcome Chrome! 
+2017-01-10 18:41:04,130 INFO  [Log] UserName field found 
+2017-01-10 18:41:04,208 INFO  [Log] Password field found 
+2017-01-10 18:41:11,893 INFO  [Log] SignInButton found 
+2017-01-10 18:41:11,895 INFO  [Log] Login with Valid Credentials Test case completed 
+2017-01-10 18:41:37,867 INFO  [Log] Successfully Navigated to section 
+2017-01-10 18:41:38,215 INFO  [Log] Click on Add assignment 
+2017-01-10 18:41:41,304 INFO  [Log] Click on Writing assignment 
+2017-01-10 18:41:46,177 INFO  [Log] Entering the writing assignment description 
+2017-01-10 18:41:46,363 INFO  [Log] Entering the value of score 
+2017-01-10 18:41:46,439 INFO  [Log] Click on Available now 
+2017-01-10 18:41:46,508 INFO  [Log] Click on Compose online 
+2017-01-10 18:41:46,604 INFO  [Log] Click on Simple text palette 
+2017-01-10 18:41:47,132 INFO  [Log] Entering the assignment title name 
+2017-01-10 18:41:50,783 INFO  [Log] Entering the due date 
+2017-01-10 18:41:55,599 INFO  [Log] Click on Review & assign button 
+2017-01-10 18:42:02,954 INFO  [Log] Click on Assign button 
+2017-01-10 18:42:02,955 INFO  [Log] Writing assignment with created type :composeonline 
+2017-01-10 18:42:03,944 INFO  [Log] LogoutButton found 
+2017-01-10 18:42:06,264 INFO  [Log] Closing the Firefox! 

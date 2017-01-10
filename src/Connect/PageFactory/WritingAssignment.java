@@ -54,7 +54,7 @@ public class WritingAssignment extends ConnectBaseSetup {
 	WebElement AssignButton;
 	
 	@SuppressWarnings("static-access")
-	public Writing(WebDriver driver){
+	public WritingAssignment(WebDriver driver){
 		this.driver = driver;		
 	}
 	

@@ -13,8 +13,11 @@ public class Selectsection extends ConnectBaseSetup {
 	public static void navigatetosection()
 	{		
 		waitforApge();	
-		//driver.navigate().to("http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515805475");
-		driver.navigate().to("http://connectdev2.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=241484236");
+		
+		//driver.navigate().to("http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515805475");				  // Staging
+		
+		driver.navigate().to(Dev2SectionURL);                  // Dev2
+		
 		waitforApge();					
 	}
 }

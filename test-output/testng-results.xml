@@ -1,59 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21" started-at="2017-01-10T11:55:02Z" finished-at="2017-01-10T11:55:02Z">
+  <suite name="Default suite" duration-ms="197870" started-at="2017-01-10T13:08:48Z" finished-at="2017-01-10T13:12:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21" started-at="2017-01-10T11:55:02Z" finished-at="2017-01-10T11:55:02Z">
-      <class name="Connect.TestScripts.GeneralTestCase">
-        <test-method status="FAIL" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:Connect.TestScripts.GeneralTestCase@d2cc05a]" name="initializeTestBaseSetup" is-config="true" duration-ms="0" started-at="2017-01-10T17:25:02Z" finished-at="2017-01-10T17:25:02Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserType' is required by @Configuration on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\mahadev\AppData\Local\Temp\testng-eclipse--675085459\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserType' is required by @Configuration on method initializeTestBaseSetup but has not been marked @Optional or defined
-in C:\Users\mahadev\AppData\Local\Temp\testng-eclipse--675085459\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="197870" started-at="2017-01-10T13:08:48Z" finished-at="2017-01-10T13:12:06Z">
+      <class name="Connect.TestScripts.WritingTestScript">
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="10166" started-at="2017-01-10T18:38:48Z" finished-at="2017-01-10T18:38:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="SKIP" signature="LoginwithValidCredentials()[pri:0, instance:Connect.TestScripts.GeneralTestCase@d2cc05a]" name="LoginwithValidCredentials" duration-ms="10" started-at="2017-01-10T17:25:02Z" finished-at="2017-01-10T17:25:02Z">
+        </test-method> <!-- LaunchBrowserwithURL -->
+        <test-method status="PASS" signature="Writing_AttachDocument()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_AttachDocument" duration-ms="54009" started-at="2017-01-10T18:38:58Z" finished-at="2017-01-10T18:39:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginwithValidCredentials -->
-        <test-method status="SKIP" signature="teaDown()[pri:0, instance:Connect.TestScripts.GeneralTestCase@d2cc05a]" name="teaDown" is-config="true" duration-ms="0" started-at="2017-01-10T17:25:02Z" finished-at="2017-01-10T17:25:02Z">
+        </test-method> <!-- Writing_AttachDocument -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2348" started-at="2017-01-10T18:39:52Z" finished-at="2017-01-10T18:39:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teaDown -->
-      </class> <!-- Connect.TestScripts.GeneralTestCase -->
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="8191" started-at="2017-01-10T18:39:54Z" finished-at="2017-01-10T18:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowserwithURL -->
+        <test-method status="PASS" signature="Writing_Both()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_Both" duration-ms="49836" started-at="2017-01-10T18:40:03Z" finished-at="2017-01-10T18:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writing_Both -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2327" started-at="2017-01-10T18:40:52Z" finished-at="2017-01-10T18:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="PASS" signature="LaunchBrowserwithURL()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="LaunchBrowserwithURL" is-config="true" duration-ms="8761" started-at="2017-01-10T18:40:55Z" finished-at="2017-01-10T18:41:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowserwithURL -->
+        <test-method status="PASS" signature="Writing_ComposeOnline()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="Writing_ComposeOnline" duration-ms="59903" started-at="2017-01-10T18:41:04Z" finished-at="2017-01-10T18:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Writing_ComposeOnline -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Connect.TestScripts.WritingTestScript@47c62251]" name="CloseBrowser" is-config="true" duration-ms="2315" started-at="2017-01-10T18:42:03Z" finished-at="2017-01-10T18:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Connect.TestScripts.WritingTestScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
