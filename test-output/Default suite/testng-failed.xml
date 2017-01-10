@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Connect.TestScripts.GeneralTestCase">
+      <class name="Connect.TestScripts.BlogTestScript">
         <methods>
-          <include name="LoginwithValidCredentials"/>
+          <include name="CloseBrowser"/>
+          <include name="LaunchBrowserwithURL"/>
+          <include name="BlogCreate"/>
         </methods>
-      </class> <!-- Connect.TestScripts.GeneralTestCase -->
+      </class> <!-- Connect.TestScripts.BlogTestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
