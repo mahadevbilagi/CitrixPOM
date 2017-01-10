@@ -1,4 +1,4 @@
-/*package Connect.General;
+package Connect.General;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,7 +45,7 @@ public class ConnectBaseSetup {
 	}
 
 	private WebDriver initFirefoxDriver(String appURL) {
-		// TODO Auto-generated method stub hi
+		// TODO Auto-generated method stub hi hi
 		System.out.println("Launching google chrome with new profile");
 		System.setProperty("webdriver.chrome.driver",driverPath + "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -81,4 +81,4 @@ public class ConnectBaseSetup {
 	
 	
 	
-}*/
+}
