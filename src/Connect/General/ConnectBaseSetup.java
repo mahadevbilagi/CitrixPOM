@@ -45,7 +45,7 @@ public class ConnectBaseSetup {
 	}
 
 	private WebDriver initFirefoxDriver(String appURL) {
-		// TODO Auto-generated method stub hi hi hi copy
+		// TODO Auto-generated method stub hi hi hi copy new
 		System.out.println("Launching google chrome with new profile");
 		System.setProperty("webdriver.chrome.driver",driverPath + "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
