@@ -22,11 +22,13 @@ public class ConnectBaseSetup {
 			protected static WebDriver driver;	
 			
 			protected String Dev2URL = "https://connectdev2.mheducation.com/connect/shortUrl.do";
-			protected String QaStg = "https://connectqastg.mheducation.com/connect/shortUrl.do";
-			protected String QaLive = "https://connectqalv.mheducation.com/connect/shortUrl.do";
+			protected String QaStgURL = "https://connectqastg.mheducation.com/connect/shortUrl.do";
+			protected String QaLiveURL = "https://connectqalv.mheducation.com/connect/shortUrl.do";
 			
 			protected static String Dev2SectionURL = "http://connectdev2.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=241484236";			
-		
+			protected static String QaStgSectionURL = "http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515805475";
+			
+			
 			public LoginPage loginPage;
 			public LogoutPage logoutPage;
 			public Selectsection selectsection;
@@ -47,7 +49,10 @@ public class ConnectBaseSetup {
 				driver = new ChromeDriver();
 				
 				driver.manage().deleteAllCookies();
-				driver.get(Dev2URL);
+		//		driver.get(Dev2URL);
+				driver.get(QaStgURL);
+		//		driver.get(QaLiveURL);
+				
 				Log.info("Welcome Chrome!");		
 				waitforApge();
 				
