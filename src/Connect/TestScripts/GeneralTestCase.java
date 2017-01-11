@@ -1,9 +1,7 @@
 package Connect.TestScripts;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
-
 import Connect.General.ConnectBaseSetup;
 import Connect.PageFactory.Selectsection;
 
@@ -21,7 +19,7 @@ public class GeneralTestCase extends ConnectBaseSetup {
 				
 			}			
 			
-	/*		@Test 
+			@Test 
 			public void LoginwithInValidCredentialsPasswordandEmail()
 			{					
 				loginPage.CheckLoginWithInValidCred("mahadev1234@gmail.com", "12345ad6");	
@@ -58,6 +56,6 @@ public class GeneralTestCase extends ConnectBaseSetup {
 				waitforApge();			
 				logoutPage.ClickonLogoutButton();			
 				waitforApge();			
-			}*/		
+			}	
 			
 }
