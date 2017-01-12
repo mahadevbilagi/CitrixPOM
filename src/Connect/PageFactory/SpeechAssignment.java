@@ -65,6 +65,9 @@ public class SpeechAssignment extends ConnectBaseSetup {
 	@FindBy(xpath = "//div[@id='peer_review_header']/div/div/div/span/a[@class='ico on_review']")
 	WebElement StudentPeerReviewOn;
 	
+	@FindBy(xpath = "//select[@id='peerReviewDueDate']")
+	WebElement PeerReviewDueDate;
+	
 	@FindBy(xpath = "//select[@id='peerReviewDuetime']")
 	WebElement PeerReviewDuetime;
 	
@@ -128,46 +131,98 @@ public class SpeechAssignment extends ConnectBaseSetup {
 		
 				
 		if(AvailableType=="NOW"){
-
+			
+			AssignmentAvailabilityNOW.click();
+			
 		}else{        
-
+			
+			AssignmentAvailabilityLATER.click();
+			
+			StartDate.click();
+			StartDate.sendKeys("");   // date
+			
+			StartTime.click();
+			StartTime.sendKeys("");   // time			
 		}
 
 		if(SpeechType=="InClass"){
 
+			InClass.click();
+			
+			InClassDueDate.click();
+			InClassDueDate.sendKeys("");  // date
+			
+			InClassDueTime.click();
+			InClassDueTime.sendKeys("");  // date			
 		}
 		else {
-
-		}
-
-
-		If(StudentSelf = 0 )
-		{
+				
+			Online.click();
 			
+			OnlineDueDate.click();
+			OnlineDueDate.sendKeys("");  // date
+			
+			OnlineDuetime.click();
+			OnlineDuetime.sendKeys("");  // date				
 		}
 
-		If( StudentPeerReview )
+		if(StudentSelf)
 		{
+			StudentSelfReviewOn.click();			
+			// Rubric logic need to write
+			
+		}else{
+			
+			StudentPeerReviewOff.click();
+			// Rubric logic need to write
+		}			
 
+		if(StudentPeer)
+		{
+			PeerReviewDueDate.click();
+			PeerReviewDueDate.sendKeys("");   // date
+			
+			PeerReviewDuetime.click();
+			PeerReviewDuetime.sendKeys("");  // time		
+			
+			StudentPeerReviewOn.click();
+			// Rubric logic need to write
+			
+			NoOfStudentsPerGroup.click();	
+			// Select values logic needed	
+			
+			if(EveryOne){
+				EveryOne.click();
+			}else if(SpeakerandInstructor)
+				{
+					SpeakerandInstructor.click();
+				}else if(InstructorOnly){
+					InstructorOnly.click();
+				}
+			
+		}else{
+			
+			StudentPeerReviewOff.click();
+			// Rubric logic need to write
 		}
 						
-		If( InstructorReview))
+		if(InstructorReview)
 		{
+			InstructorReviewOn.click();
+			// Rubric logic need to write
 
-		}
+		}else{
+			
+			InstructorReviewOff.click();
+		}		
 		
+		MessagetoStudents.clear();
+		MessagetoStudents.sendKeys("All the best");
 		
+		ReviewandAssign.click();
+		waitforApge();
 		
-		
-
-
-		
-		
-		AssignmentAvailabilityNOW.click();
-		Log.info("Click on assignment available now");
-		
-		
-		
+		Assign.click();
 		
 		
 	}	
