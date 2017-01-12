@@ -182,7 +182,7 @@ public class SpeechAssignment extends ConnectBaseSetup {
 			PeerReviewDueDate.click();
 			PeerReviewDueDate.sendKeys("");   // date
 			
-			PeerReviewDuetime.click();
+			PeerReviewDuetime.click(); 
 			PeerReviewDuetime.sendKeys("");  // time		
 			
 			StudentPeerReviewOn.click();
