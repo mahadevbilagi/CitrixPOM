@@ -27,7 +27,7 @@ public class WritingAssignment extends ConnectBaseSetup {
 	WebElement Score;
 	
 	@FindBy(id = "availablity_now")
-	WebElement AvailablityNow;
+	WebElement AvailablityNow;	
 	
 	@FindBy(id = "availablity_later")
 	WebElement AvailablityLater;
