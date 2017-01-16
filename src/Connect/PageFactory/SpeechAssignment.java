@@ -256,14 +256,14 @@ public class SpeechAssignment extends ConnectBaseSetup {
 						
 		if(InstructorReview)
 		{
-			InstructorReviewOn.click();
+			// InstructorReviewOn.click();   // default its on :) 
 			Log.info("Click on Instructor Review = ON");
 			// Rubric logic need to write
 			waitforApge();
 
 		}else{
 			
-			InstructorReviewOff.click();
+			InstructorReviewOff.click();	
 			Log.info("Click on Instructor Review = OFF");
 			waitforApge();
 		}		
