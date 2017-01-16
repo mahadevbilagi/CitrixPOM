@@ -15,6 +15,7 @@ import Connect.PageFactory.BlogAssignment;
 import Connect.PageFactory.LoginPage;
 import Connect.PageFactory.LogoutPage;
 import Connect.PageFactory.Selectsection;
+import Connect.PageFactory.SpeechAssignment;
 import Connect.PageFactory.WritingAssignment;
 
 public class ConnectBaseSetup {	
@@ -27,13 +28,13 @@ public class ConnectBaseSetup {
 			
 			protected static String Dev2SectionURL = "http://connectdev2.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=241484236";			
 			protected static String QaStgSectionURL = "http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515805475";
-			
-			
+				
 			public LoginPage loginPage;
 			public LogoutPage logoutPage;
 			public Selectsection selectsection;
 			public BlogAssignment BlogCreate;
 			public WritingAssignment WriteCreate;
+			public SpeechAssignment SpeechCreate;
 			
 			public static Logger Log = Logger.getLogger(Log.class.getName());
 		
@@ -61,7 +62,8 @@ public class ConnectBaseSetup {
 				selectsection = PageFactory.initElements(driver, Selectsection.class);
 				BlogCreate = PageFactory.initElements(driver, BlogAssignment.class);
 				WriteCreate = PageFactory.initElements(driver, WritingAssignment.class);
-				
+				SpeechCreate= PageFactory.initElements(driver, SpeechAssignment.class);
+						
 			}					
 
 			@AfterMethod
@@ -76,7 +78,7 @@ public class ConnectBaseSetup {
 			
 			public static void waitforApge()
 			{
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(50, TimeUnit.MILLISECONDS);
 			}	
 	
 }

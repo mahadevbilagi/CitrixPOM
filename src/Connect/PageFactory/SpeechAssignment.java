@@ -1,9 +1,11 @@
 package Connect.PageFactory;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import Connect.General.ConnectBaseSetup;
 
@@ -65,7 +67,7 @@ public class SpeechAssignment extends ConnectBaseSetup {
 	@FindBy(xpath = "//div[@id='peer_review_header']/div/div/div/span/a[@class='ico on_review']")
 	WebElement StudentPeerReviewOn;
 	
-	@FindBy(xpath = "//select[@id='peerReviewDueDate']")
+	@FindBy(xpath = "//input[@id='peerReviewDueDate']")
 	WebElement PeerReviewDueDate;
 	
 	@FindBy(xpath = "//select[@id='peerReviewDuetime']")
@@ -105,13 +107,21 @@ public class SpeechAssignment extends ConnectBaseSetup {
 	
 	@FindBy(xpath = "//a[@class='saveAssignbtn btntwo right btn_margin_space ']/span")
 	WebElement Assign;
-		
+	
+	@FindBy(xpath = "//input[@id='inClassStartDate']")
+	WebElement InClassStartDate;
+	
+	@FindBy(xpath = "//input[@id='inClassStarttime']")
+	WebElement InClassStarttime;
+	
 	@SuppressWarnings("static-access")
 	public SpeechAssignment(WebDriver driver){
 		this.driver = driver;		
 	}
 	
-	public void CreateSpeeachAssignment(String type,String AvailableType,String SpeechType,boolean StudentSelf,boolean StudentPeer,boolean InstructorReview) throws InterruptedException{
+	@SuppressWarnings("unused")
+	public void CreateSpeeachAssignment(String AvailableType,String SpeechType,boolean StudentSelf,
+			boolean StudentPeer,boolean InstructorReview,String show_comments_and_rubric_to) throws InterruptedException{
 		
 		AddAssignment.isEnabled();
 		AddAssignment.click();
@@ -122,7 +132,7 @@ public class SpeechAssignment extends ConnectBaseSetup {
 		Log.info("Click on Speech assignment");
 		
 		AssignmentTitle.sendKeys(Keys.ENTER);
-		AssignmentTitle.sendKeys("Speech Assignment - 01");
+		AssignmentTitle.sendKeys("Speech Assignment-:",AvailableType,SpeechType);
 		Log.info("Entering the assignment title name");
 		
 		Score.clear();
@@ -133,13 +143,16 @@ public class SpeechAssignment extends ConnectBaseSetup {
 		if(AvailableType=="NOW"){
 			
 			AssignmentAvailabilityNOW.click();
+			Log.info("Click on assignment available NOW");
 			
 		}else{        
 			
 			AssignmentAvailabilityLATER.click();
+			Log.info("Click on assignment available LATER!");
 			
 			StartDate.click();
 			StartDate.sendKeys("");   // date
+			Log.info("Enter the value of Start Date");
 			
 			StartTime.click();
 			StartTime.sendKeys("");   // time			
@@ -150,80 +163,122 @@ public class SpeechAssignment extends ConnectBaseSetup {
 			InClass.click();
 			
 			InClassDueDate.click();
-			InClassDueDate.sendKeys("");  // date
+			InClassDueDate.sendKeys("01/18/2017");  // date
+			Log.info("Enter the value of InClass Due Date");
 			
-			InClassDueTime.click();
-			InClassDueTime.sendKeys("");  // date			
+//			InClassDueTime.click();
+//			InClassDueTime.sendKeys("00:30 am");  // date		
+			
+			InClassStartDate.click();
+			InClassStartDate.sendKeys("01/17/2017");  // date
+			Log.info("Enter the value of InClass Start Date");
+			
+//			InClassStarttime.click();
+//			InClassStarttime.sendKeys("00:30 am");  // date
 		}
 		else {
 				
 			Online.click();
+			Log.info("Click on Speech type = Online");
 			
 			OnlineDueDate.click();
 			OnlineDueDate.sendKeys("");  // date
+			Log.info("Enter the Online Due date ");
 			
-			OnlineDuetime.click();
-			OnlineDuetime.sendKeys("");  // date				
+			OnlineDueDate.click();
+			OnlineDueDate.sendKeys("01/17/2017");  // date
+			Log.info("Enter the value of Online Start Date");
+			
+//			OnlineDuetime.click();
+//			OnlineDuetime.sendKeys("00:30 am");  // date				
 		}
 
 		if(StudentSelf)
 		{
-			StudentSelfReviewOn.click();			
-			// Rubric logic need to write
+			StudentSelfReviewOn.click();
+			Log.info("Click on Student Self Review = ON");
+			// Rubric logic need to write			
+			waitforApge();
 			
 		}else{
 			
 			StudentPeerReviewOff.click();
+			Log.info("Click on Student Self Review = OFF");
 			// Rubric logic need to write
+			waitforApge();
 		}			
 
 		if(StudentPeer)
 		{
-			PeerReviewDueDate.click();
-			PeerReviewDueDate.sendKeys("");   // date
-			
-			PeerReviewDuetime.click(); 
-			PeerReviewDuetime.sendKeys("");  // time		
-			
 			StudentPeerReviewOn.click();
+			Log.info("Click on Student Peer Review = ON");
 			// Rubric logic need to write
+			waitforApge();
 			
+			Thread.sleep(500);
+			PeerReviewDueDate.click();
+			PeerReviewDueDate.sendKeys("01/19/2017");   // date
+			Log.info("Enter the Peer Review Due date");
+			
+//			PeerReviewDuetime.click(); 
+//			PeerReviewDuetime.sendKeys("00:30 am");  // time		
+						
 			NoOfStudentsPerGroup.click();	
+			waitforApge();
+			Select dropdown = new Select(driver.findElement(By.id("noOfStudentsPerGroup")));
+			dropdown.selectByValue("30");
+			Log.info("Enter the Student Group Value");
+			waitforApge();		
+			
 			// Select values logic needed	
 			
-			if(EveryOne){
+			if(show_comments_and_rubric_to == "EveryOne"){
 				EveryOne.click();
-			}else if(SpeakerandInstructor)
+				Log.info("Click on Show Comments and Rubric to 'EveryOne'");
+				waitforApge();
+			}else if(show_comments_and_rubric_to == "SpeakerandInstructor")
 				{
 					SpeakerandInstructor.click();
-				}else if(InstructorOnly){
+					Log.info("Click on Show Comments and Rubric to 'Speaker and Instructor'");
+					waitforApge();
+				}else if(show_comments_and_rubric_to == "InstructorOnly"){
 					InstructorOnly.click();
+					Log.info("Click on Show Comments and Rubric to 'Instructor Only'");
+					waitforApge();
 				}
 			
 		}else{
 			
 			StudentPeerReviewOff.click();
+			Log.info("Click on Student Peer Review = OFF");
 			// Rubric logic need to write
 		}
 						
 		if(InstructorReview)
 		{
 			InstructorReviewOn.click();
+			Log.info("Click on Instructor Review = ON");
 			// Rubric logic need to write
+			waitforApge();
 
 		}else{
 			
 			InstructorReviewOff.click();
+			Log.info("Click on Instructor Review = OFF");
+			waitforApge();
 		}		
 		
 		MessagetoStudents.clear();
-		MessagetoStudents.sendKeys("All the best");
+		MessagetoStudents.sendKeys("All the best !!");
+		Log.info("Entering the message to students");
 		
 		ReviewandAssign.click();
+		Log.info("Click on Review&Assign button");
+		waitforApge();		
+		
+		Assign.click();		
+		Log.info("Click on Assign button");
 		waitforApge();
-		
-		Assign.click();
-		
 		
 	}	
 	
