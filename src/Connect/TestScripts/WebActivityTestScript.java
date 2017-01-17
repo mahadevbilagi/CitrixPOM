@@ -6,8 +6,8 @@ import Connect.General.ConnectBaseSetup;
 
 public class WebActivityTestScript extends ConnectBaseSetup {			
 
-	@SuppressWarnings("static-access")
-	@Test (invocationCount=2)
+	//@SuppressWarnings("static-access")
+	@Test (invocationCount=1)
 	public void WebActivityCreate() throws InterruptedException
 	{	
 		loginPage.CheckLoginWithValidCred("mahadev@gmail.com", "123456");
