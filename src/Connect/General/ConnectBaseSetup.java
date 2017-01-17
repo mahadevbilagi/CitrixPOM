@@ -1,15 +1,20 @@
 package Connect.General;
 
+import java.awt.AWTException;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.eclipse.jetty.util.log.Log;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
 import Connect.PageFactory.BlogAssignment;
 import Connect.PageFactory.LoginPage;
@@ -17,7 +22,15 @@ import Connect.PageFactory.LogoutPage;
 import Connect.PageFactory.Selectsection;
 import Connect.PageFactory.SpeechAssignment;
 import Connect.PageFactory.WritingAssignment;
+import atu.testng.reports.ATUReports;
+import atu.testng.reports.listeners.ATUReportsListener;
+import atu.testng.reports.listeners.ConfigurationListener;
+import atu.testng.reports.listeners.MethodListener;
+import atu.testng.reports.logging.LogAs;
+import atu.testng.selenium.reports.CaptureScreen;
+import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
 
+@Listeners({ ATUReportsListener.class, ConfigurationListener.class,MethodListener.class })
 public class ConnectBaseSetup {	
 	
 			protected static WebDriver driver;	
@@ -28,7 +41,11 @@ public class ConnectBaseSetup {
 			
 			protected static String Dev2SectionURL = "http://connectdev2.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=241484236";			
 			protected static String QaStgSectionURL = "http://connectqastg.mheducation.com/connect/hmInstructorSectionHomePortal.do?sectionId=515805475";
-				
+			
+			{
+				System.setProperty("atu.reporter.config", "D:\\All JAR files for selenium\\ATUPropertyfile\\atu.properties");
+			}
+			
 			public LoginPage loginPage;
 			public LogoutPage logoutPage;
 			public Selectsection selectsection;
@@ -36,7 +53,8 @@ public class ConnectBaseSetup {
 			public WritingAssignment WriteCreate;
 			public SpeechAssignment SpeechCreate;
 			
-			public static Logger Log = Logger.getLogger(Log.class.getName());
+			public static Logger Log = Logger.getLogger(Log.class.getName());			
+	
 		
 			@BeforeMethod
 			public void LaunchBrowserwithURL()
@@ -53,6 +71,10 @@ public class ConnectBaseSetup {
 		//		driver.get(Dev2URL);
 				driver.get(QaStgURL);
 		//		driver.get(QaLiveURL);
+				
+				// ATU Reports
+				ATUReports.setWebDriver(driver);
+				ATUReports.indexPageDescription = "MGHConnect_Test Project";
 				
 				Log.info("Welcome Chrome!");		
 				waitforApge();
@@ -74,6 +96,16 @@ public class ConnectBaseSetup {
 					//driver.quit();
 				}				
 				Log.info("Closing the Firefox!");
+			}
+			
+			// ATU Reports Method		
+			public void testNewLogs() throws AWTException, IOException {
+		 
+				ATUReports.add("INfo Step", LogAs.INFO, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
+				ATUReports.add("Pass Step", LogAs.PASSED, new CaptureScreen(ScreenshotOf.DESKTOP));
+				WebElement element = driver.findElement(By.xpath("/html/body/div/h1/a"));
+				ATUReports.add("Warning Step", LogAs.WARNING,new CaptureScreen(element));
+				ATUReports.add("Fail step", LogAs.FAILED, new CaptureScreen(ScreenshotOf.DESKTOP));
 			}
 			
 			public static void waitforApge()

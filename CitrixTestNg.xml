@@ -5,9 +5,7 @@
 <parameter name="browserType" value="chrome"/>
   <test name="Test">
     <classes>
-      <class name="Citrix.TestScripts.BasePageTest"/>
-      <class name="Citrix.TestScripts.CreateAnAccounTest"/>
-      <class name="Citrix.TestScripts.SignInPageTest"/>
+      <class name="Citrix.TestScripts.BlogTestScript.java"/>    
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->  <!-- Suite Keshv -->
+</suite> <!-- Suite -->
