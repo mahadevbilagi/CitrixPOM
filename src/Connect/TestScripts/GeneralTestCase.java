@@ -7,7 +7,7 @@ import Connect.PageFactory.Selectsection;
 
 public class GeneralTestCase extends ConnectBaseSetup {		
 	
-			@Test 
+		@Test 
 			public void LoginwithValidCredentials()
 			{			
 				loginPage.CheckLoginWithValidCred("mahadev@gmail.com", "123456");				

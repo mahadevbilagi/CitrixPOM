@@ -21,6 +21,7 @@ import Connect.PageFactory.LoginPage;
 import Connect.PageFactory.LogoutPage;
 import Connect.PageFactory.Selectsection;
 import Connect.PageFactory.SpeechAssignment;
+import Connect.PageFactory.WebActivityAssignment;
 import Connect.PageFactory.WritingAssignment;
 import atu.testng.reports.ATUReports;
 import atu.testng.reports.listeners.ATUReportsListener;
@@ -52,6 +53,7 @@ public class ConnectBaseSetup {
 			public BlogAssignment BlogCreate;
 			public WritingAssignment WriteCreate;
 			public SpeechAssignment SpeechCreate;
+			public WebActivityAssignment WebActivityCreate;
 			
 			public static Logger Log = Logger.getLogger(Log.class.getName());			
 	
@@ -59,15 +61,20 @@ public class ConnectBaseSetup {
 			@BeforeMethod
 			public void LaunchBrowserwithURL()
 			{
-				DOMConfigurator.configure("log4j.xml"); 															// Log4j Configuration		
-				
+				DOMConfigurator.configure("log4j.xml"); 
 				System.setProperty("webdriver.gecko.driver","D:\\All JAR files for selenium\\geckodriver.exe");     // Gecko driver path setup			
 				System.setProperty("webdriver.chrome.driver","D:\\All JAR files for selenium\\chromedriver.exe"); 
 				
-		//		driver = new FirefoxDriver();
+	/*			driver = new FirefoxDriver();
+				Log.info("Welcome Firefox!");		
+				waitforApge();*/
+				
 				driver = new ChromeDriver();
+				Log.info("Welcome Chrome!");		
+				waitforApge();
 				
 				driver.manage().deleteAllCookies();
+				
 		//		driver.get(Dev2URL);
 				driver.get(QaStgURL);
 		//		driver.get(QaLiveURL);
@@ -76,8 +83,7 @@ public class ConnectBaseSetup {
 				ATUReports.setWebDriver(driver);
 				ATUReports.indexPageDescription = "MGHConnect_Test Project";
 				
-				Log.info("Welcome Chrome!");		
-				waitforApge();
+				
 				
 				loginPage = PageFactory.initElements(driver, LoginPage.class);
 				logoutPage = PageFactory.initElements(driver, LogoutPage.class);	
@@ -85,6 +91,7 @@ public class ConnectBaseSetup {
 				BlogCreate = PageFactory.initElements(driver, BlogAssignment.class);
 				WriteCreate = PageFactory.initElements(driver, WritingAssignment.class);
 				SpeechCreate= PageFactory.initElements(driver, SpeechAssignment.class);
+				WebActivityCreate= PageFactory.initElements(driver, WebActivityAssignment.class);
 						
 			}					
 
