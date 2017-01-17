@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="Connect.TestScripts.MyTestScripts"/>
+      <class name="Connect.TestScripts.WebActivityTestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite    -->
