@@ -77,7 +77,9 @@ public class BlogAssignment extends ConnectBaseSetup {
 		Blogassignment.click();						
 		Log.info("Click on Blog assignment");
 		
+		waitforApge();
 		driver.switchTo().frame(driver.findElement(By.id("note_ifr")));
+		waitforApge();
 		BlogDescritpion.clear();
 		BlogDescritpion.click();
 		BlogDescritpion.sendKeys("Blog assignment description ...");
