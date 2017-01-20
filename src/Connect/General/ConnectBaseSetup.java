@@ -15,6 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import Connect.PageFactory.BlogAssignment;
 import Connect.PageFactory.LoginPage;
@@ -105,7 +106,8 @@ public class ConnectBaseSetup {
 				Log.info("Closing the Firefox!");
 			}
 			
-			// ATU Reports Method		
+			// ATU Reports Method	
+			@Test
 			public void testNewLogs() throws AWTException, IOException {
 		 
 				ATUReports.add("INfo Step", LogAs.INFO, new CaptureScreen(ScreenshotOf.BROWSER_PAGE));
