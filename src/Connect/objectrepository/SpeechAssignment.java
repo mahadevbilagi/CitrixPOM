@@ -1,4 +1,4 @@
-package Connect.PageFactory;
+package Connect.objectrepository;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
