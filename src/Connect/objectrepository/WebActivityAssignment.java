@@ -121,7 +121,7 @@ public class WebActivityAssignment extends ConnectBaseSetup {
 		Log.info("Click Next assign button");		
 		
 		AvailableStartDate.click();
-		AvailableStartDate.sendKeys("01/18/2017");
+		AvailableStartDate.sendKeys("01/24/2017");
 		Log.info("Entering the assignment Start date");
 		
 		AvailableDueDate.click();
