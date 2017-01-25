@@ -1,5 +1,6 @@
 package Connect.PageFactory;
 
+import org.apache.xpath.operations.String;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,7 @@ public class LoginPage extends ConnectBaseSetup {
 		SignInButton.click();		
 		Log.info("SignInButton found");
 		
+	
 	}	
 	
 	public void CheckLoginWithValidCred(String Username, String PassWord)

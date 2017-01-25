@@ -1,6 +1,6 @@
 package Connect.TestScripts;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import Connect.General.ConnectBaseSetup;
 

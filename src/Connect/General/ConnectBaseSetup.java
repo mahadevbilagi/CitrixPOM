@@ -1,11 +1,8 @@
 package Connect.General;
 
-import java.awt.AWTException;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.xpath.operations.String;
 import org.eclipse.jetty.util.log.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

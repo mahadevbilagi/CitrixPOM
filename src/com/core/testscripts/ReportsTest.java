@@ -1,9 +1,6 @@
 package com.core.testscripts;
 
-import java.awt.AWTException;
-import java.io.IOException;
-import java.sql.SQLException;
-
+import org.apache.xpath.operations.String;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
